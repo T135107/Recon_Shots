@@ -1,0 +1,30 @@
+<div class="post-index-wrapper">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="post-index-single">
+            <h3 class="post-airplane">
+              <%= post.airplane.name %>
+            </h3>
+            <a href="/users/<%= post.user.id %>" class="post-author">
+                <%= post.user.name %>
+            </a>
+            <p class="post-text">
+              <%= post.description %>
+            </p>
+            <%= image_tag post.image.url %>
+            <%= link_to 'コメントする', new_comment_path(post_id: post.id), class: 'post-index' %>
+            <h4 class="text-center">コメント</h4>
+            <div class="post-index-comment">
+              <% post.comments.each do |comment| %>
+              <a href="/users/<%= comment.user.id %>" class="comment-author"><%= comment.user.name %></a>
+              <p class="comment-text"><%= comment.content %></p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

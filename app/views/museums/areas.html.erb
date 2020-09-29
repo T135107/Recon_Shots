@@ -1,0 +1,16 @@
+<div class="museum-area-wrapper">
+  <div class="container">
+    <div class="row">
+      <h2 class="museum-area">
+        <%= @area %>
+        <hr>
+      </h2>
+      <% @museums.each do |museum| %>
+        <div class="museum-name">
+          <a href="/museums/<%= museum.id %>"><%= museum.name %></a>
+          <hr>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
