@@ -6,7 +6,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.top-text {
+.top-title {
   font-size: 100px;
   margin: 0;
   position: absolute;
@@ -14,6 +14,11 @@ h1 {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
+}
+
+.top-text {
+  font-size: 25px;
+  padding-top: 15px;
 }
 
 .btn-white {

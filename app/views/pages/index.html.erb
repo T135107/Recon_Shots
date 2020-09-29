@@ -2,7 +2,10 @@
   <div class="container　top-hero-container">
     <div class="row">
       <% if logged_in? %>
-        <h1 class="top-text">Recon Shots</h1>
+        <h1 class="top-title">Recon Shots</h1>
+        <div class="top-text">
+          <%= link_to '軍用航空機の写真を共有しよう', new_post_path %>
+        </div>
       <% else %>
         <div class="col-md-offset-3 col-md-3">
           <%= link_to '登録', new_user_path, class: 'btn btn-block btn-white' %>
