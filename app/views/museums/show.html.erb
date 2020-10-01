@@ -7,18 +7,14 @@
             <h3 class="post-airplane">
               <%= post.airplane.name %>
             </h3>
-            <a href="/users/<%= post.user.id %>" class="post-author">
-                <%= post.user.name %>
-            </a>
-            <p class="post-text">
-              <%= post.description %>
-            </p>
+            <a class="post-author"><%= post.user.name %></a>
+            <p class="post-text"><%= post.description %></p>
             <%= image_tag post.image.url %>
             <%= link_to 'コメントする', new_comment_path(post_id: post.id), class: 'post-index' %>
             <h4 class="text-center">コメント</h4>
             <div class="post-index-comment">
               <% post.comments.each do |comment| %>
-              <a href="/users/<%= comment.user.id %>" class="comment-author"><%= comment.user.name %></a>
+              <a class="comment-author"><%= comment.user.name %></a>
               <p class="comment-text"><%= comment.content %></p>
               <% end %>
             </div>

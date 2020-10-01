@@ -8,17 +8,12 @@ h1 {
 
 .top-title {
   font-size: 100px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  margin: 10px auto;
 }
 
 .top-text {
   font-size: 25px;
-  padding-top: 15px;
+  margin: 10px auto;
 }
 
 .btn-white {
@@ -35,7 +30,7 @@ h1 {
 }
 
 .top-hero-wrapper {
-  padding-top: 400px;
+  padding-top: 200px;
   background-color: #fafafa;
   width: 100vw;
   height: 100vh;
@@ -85,14 +80,11 @@ h1 {
   .navbar-title {
     font-size: 30px;
     padding: 25px;
+    margin-right: 500px;
   }
   
   .navbar-btn {
     font: 30px;
-  }
-
-  img {
-    height: 40px;
   }
 }
 
